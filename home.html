@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stock bazar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">StOck BazAar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Calender</a>
+            </li>
+            <li class="nav-item badge bg-primary">
+              <a class="nav-link" href="#"> News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Market
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Currencies</a></li>
+                <li><a class="dropdown-item" href="#">Stocks</a></li>
+                <li><a class="dropdown-item" href="#">Commodities</a></li>
+                <li><a class="dropdown-item" href="#">Bonds</a></li>
+                <li><a class="dropdown-item" href="#">Crypto</a></li>
+                <li><a class="dropdown-item" href="#">Earnings</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Hot Topics</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Indicators
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Inflation Rates</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Unemployment Rates</a>
+                </li>
+                <li><a class="dropdown-item" href="#">GDP Value</a></li>
+                <li><a class="dropdown-item" href="#">Gold Reserves </a></li>
+                <li><a class="dropdown-item" href="#">Government Debt</a></li>
+              </ul>
+            </li>
+
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>
+        Aww yeah, you successfully read this important alert message. This
+        example text is going to run a bit longer so that you can see how
+        spacing within an alert works with this kind of content.
+      </p>
+      <hr />
+      <p class="mb-0">
+        Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy.
+      </p>
+    </div>
+
+    <div class="card text-bg-dark">
+      <img
+        src="https://images.unsplash.com/photo-1549421263-6064833b071b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80"
+        class="card-img"
+        alt="..."
+        height="500"
+        width="600"
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Sensex Rises for 2nd Day</h5>
+        <p class="card-text">
+          The BSE Sensex rose 70.2 points or 0.1% to 60,126.3 in morning trade
+          on Tuesday, trying to build gains from the previous session, as
+          traders continued to await key quarterly earnings results. Meanwhile,
+          US futures traded lower ahead of corporate earnings reports and key
+          economic data, including consumer sentiment, core PCE index, and Q1
+          GDP figures. However, gains were capped by geopolitical tensions such
+          as the US plans last week to limit investments in key parts of China’s
+          economy. Eight of the 13 major sectoral were trading in the green,
+          supported by the public services banks, metals, and financial
+          services. Adani Enterprises rose 3.7%, followed by Bajaj Finance
+          (1.9%), and Bajaj Finserv (1.5%). Meanwhile, IndusInd Bank gained 1.4%
+          after reporting a 50% yoy surge in net profit for the fourth quarter
+          that ended March, better than expected. Bajaj Auto, Nestle India, Tata
+          Consumer Products, and HDFC AMC will announce their results later in
+          the day.
+        </p>
+        <h5 class="card-title">
+          Armenia Posts Largest Trade Gap in Over 3 Years
+        </h5>
+        <p class="card-text">
+          The trade deficit in Armenia widened to USD 436.7 million in March
+          2023, almost doubling from the USD 220.2 million gap in the same month
+          a year earlier. It was the largest trade deficit since December 2019,
+          as imports increased 136.9 percent year-on-year to USD 1,063.3
+          million, while exports went up 174.1 percent to USD 626.6 million.
+          Considering the January-March period, the country registered a trade
+          gap of USD 918.6 million, compared to the USD 631.1 million deficit in
+          the corresponding period last year.
+        </p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+ 
+
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <button type="button" class="btn btn-primary">1</button>
+      <button type="button" class="btn btn-primary">2</button>
+      <button type="button" class="btn btn-primary">3</button>
+      <button type="button" class="btn btn-primary">4</button>
+      <button type="button" class="btn btn-primary">5</button>
+      <button type="button" class="btn btn-primary">6</button>
+      <button type="button" class="btn btn-primary">7</button>
+      <button type="button" class="btn btn-primary">8</button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
